@@ -1,6 +1,8 @@
 -- Merging decision tree log ---
 manifest
 ADDED from /Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/src/main/AndroidManifest.xml:1:1-19:12
+INJECTED from /Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/src/main/AndroidManifest.xml:1:1-19:12
+INJECTED from /Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/src/main/AndroidManifest.xml:1:1-19:12
 	package
 		ADDED from /Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/src/main/AndroidManifest.xml:2:9-51
 		INJECTED from /Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/src/main/AndroidManifest.xml

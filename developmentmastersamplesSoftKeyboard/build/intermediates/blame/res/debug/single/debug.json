@@ -1,0 +1,98 @@
+[
+    {
+        "merged": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/build/intermediates/res/merged/debug/drawable-mdpi_sym_keyboard_space.png.flat",
+        "source": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/src/main/res/drawable-mdpi/sym_keyboard_space.png"
+    },
+    {
+        "merged": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/build/intermediates/res/merged/debug/xml_symbols_shift.xml.flat",
+        "source": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/src/main/res/xml/symbols_shift.xml"
+    },
+    {
+        "merged": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/build/intermediates/res/merged/debug/drawable-hdpi_sym_keyboard_return.png.flat",
+        "source": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/src/main/res/drawable-hdpi/sym_keyboard_return.png"
+    },
+    {
+        "merged": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/build/intermediates/res/merged/debug/drawable-hdpi_sym_keyboard_delete.png.flat",
+        "source": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/src/main/res/drawable-hdpi/sym_keyboard_delete.png"
+    },
+    {
+        "merged": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/build/intermediates/res/merged/debug/xml_method.xml.flat",
+        "source": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/src/main/res/xml/method.xml"
+    },
+    {
+        "merged": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/build/intermediates/res/merged/debug/drawable-mdpi_sym_keyboard_return.png.flat",
+        "source": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/src/main/res/drawable-mdpi/sym_keyboard_return.png"
+    },
+    {
+        "merged": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/build/intermediates/res/merged/debug/drawable-mdpi_icon_en_us.png.flat",
+        "source": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/src/main/res/drawable-mdpi/icon_en_us.png"
+    },
+    {
+        "merged": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/build/intermediates/res/merged/debug/drawable-hdpi_icon_en_gb.png.flat",
+        "source": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/src/main/res/drawable-hdpi/icon_en_gb.png"
+    },
+    {
+        "merged": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/build/intermediates/res/merged/debug/drawable-mdpi_sym_keyboard_delete.png.flat",
+        "source": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/src/main/res/drawable-mdpi/sym_keyboard_delete.png"
+    },
+    {
+        "merged": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/build/intermediates/res/merged/debug/layout_input.xml.flat",
+        "source": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/src/main/res/layout/input.xml"
+    },
+    {
+        "merged": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/build/intermediates/res/merged/debug/xml_symbols.xml.flat",
+        "source": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/src/main/res/xml/symbols.xml"
+    },
+    {
+        "merged": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/build/intermediates/res/merged/debug/drawable-mdpi_sym_keyboard_shift.png.flat",
+        "source": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/src/main/res/drawable-mdpi/sym_keyboard_shift.png"
+    },
+    {
+        "merged": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/build/intermediates/res/merged/debug/xml_qwerty.xml.flat",
+        "source": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/src/main/res/xml/qwerty.xml"
+    },
+    {
+        "merged": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/build/intermediates/res/merged/debug/drawable-hdpi_sym_keyboard_search.png.flat",
+        "source": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/src/main/res/drawable-hdpi/sym_keyboard_search.png"
+    },
+    {
+        "merged": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/build/intermediates/res/merged/debug/drawable-hdpi_sym_keyboard_shift.png.flat",
+        "source": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/src/main/res/drawable-hdpi/sym_keyboard_shift.png"
+    },
+    {
+        "merged": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/build/intermediates/res/merged/debug/drawable-mdpi_icon_en_gb.png.flat",
+        "source": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/src/main/res/drawable-mdpi/icon_en_gb.png"
+    },
+    {
+        "merged": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/build/intermediates/res/merged/debug/drawable-mdpi_sym_keyboard_done.png.flat",
+        "source": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/src/main/res/drawable-mdpi/sym_keyboard_done.png"
+    },
+    {
+        "merged": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/build/intermediates/res/merged/debug/drawable-hdpi_icon_en_us.png.flat",
+        "source": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/src/main/res/drawable-hdpi/icon_en_us.png"
+    },
+    {
+        "merged": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/build/intermediates/res/merged/debug/drawable-mdpi_sym_keyboard_search.png.flat",
+        "source": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/src/main/res/drawable-mdpi/sym_keyboard_search.png"
+    },
+    {
+        "merged": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/build/intermediates/res/merged/debug/drawable-hdpi_sym_keyboard_language_switch.png.flat",
+        "source": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/src/main/res/drawable-hdpi/sym_keyboard_language_switch.png"
+    },
+    {
+        "merged": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/build/intermediates/res/merged/debug/drawable-hdpi_sym_keyboard_space.png.flat",
+        "source": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/src/main/res/drawable-hdpi/sym_keyboard_space.png"
+    },
+    {
+        "merged": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/build/intermediates/res/merged/debug/xml_ime_preferences.xml.flat",
+        "source": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/src/main/res/xml/ime_preferences.xml"
+    },
+    {
+        "merged": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/build/intermediates/res/merged/debug/drawable-mdpi_sym_keyboard_language_switch.png.flat",
+        "source": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/src/main/res/drawable-mdpi/sym_keyboard_language_switch.png"
+    },
+    {
+        "merged": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/build/intermediates/res/merged/debug/drawable-hdpi_sym_keyboard_done.png.flat",
+        "source": "/Users/jingzheng/developer/gitWorkSpaces/GitTestWidget/developmentmastersamplesSoftKeyboard/src/main/res/drawable-hdpi/sym_keyboard_done.png"
+    }
+]

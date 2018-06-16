@@ -17,9 +17,9 @@
             <option value="$PROJECT_DIR$/library/jcvideoplayer" />
             <option value="$PROJECT_DIR$/library/oneKeyShareSDK" />
             <option value="$PROJECT_DIR$/library/photoPicker" />
-            <option value="$PROJECT_DIR$/library/selectordialog" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>
   </component>

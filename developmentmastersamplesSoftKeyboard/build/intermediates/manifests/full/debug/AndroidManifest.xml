@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.android.softkeyboard" >
 
-    <application android:label="@string/ime_name" >
+    <application
+        android:debuggable="true"
+        android:label="@string/ime_name" >
         <service
             android:name="com.example.android.softkeyboard.SoftKeyboard"
             android:permission="android.permission.BIND_INPUT_METHOD" >
