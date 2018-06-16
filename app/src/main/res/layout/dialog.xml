@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:custom="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:gravity="center"
+              android:layout_height="wrap_content">
+
+
+    <cos.jingzheng.gittestwidget.view.VerificationCode
+        android:layout_gravity="center"
+        android:gravity="center"
+        custom:vc_box_size="4"
+        custom:vc_textsize="13sp"
+        custom:vc_marginSpace="@dimen/x5"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
