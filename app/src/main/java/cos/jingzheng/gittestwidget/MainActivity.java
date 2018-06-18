@@ -11,6 +11,7 @@ import android.widget.Button;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import cos.jingzheng.gittestwidget.progressBar.ProgressBarActivity;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btn_map:
-                startActivity(new Intent(this, BaiduMapActivity.class));
+                startActivity(new Intent(this, ProgressBarActivity.class));
                 break;
             case R.id.btn_dialog:
                 initDialog();
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
     }
+
 
     private void initDialog() {
 

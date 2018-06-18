@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:text="答题卡"
+            android:paddingLeft="13dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="17sp"
+            android:textColor="#a9a6a6"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/cancel"
+            android:paddingRight="13dp"
+            android:paddingLeft="17dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/close_zs"
+            android:layout_width="45dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <View
+        android:background="#8e8888"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:textSize="14sp"
+        android:textColor="#706d6d"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="13dp"
+        android:text="共有"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:paddingLeft="13dp"
+        android:id="@+id/recylerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
