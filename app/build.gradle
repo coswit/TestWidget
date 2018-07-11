@@ -34,4 +34,5 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
     compile 'com.solidfire.code.gson:gson:2.6.2'
     compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.20'
+    implementation 'com.blankj:utilcode:1.17.0'
 }

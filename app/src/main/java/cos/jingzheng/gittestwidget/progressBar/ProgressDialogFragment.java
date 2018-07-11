@@ -11,6 +11,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.TextView;
+
+import com.blankj.utilcode.util.SpanUtils;
 
 import cos.jingzheng.gittestwidget.R;
 import lombok.Setter;
@@ -26,6 +29,7 @@ public class ProgressDialogFragment extends DialogFragment {
     private CardAnswerAdapter mAdapter;
     @Setter
     public CardAnswerBean cardAnswer;
+    TextView total;
 
     @Nullable
     @Override
@@ -34,6 +38,7 @@ public class ProgressDialogFragment extends DialogFragment {
         getDialog().requestWindowFeature(Window.FEATURE_NO_TITLE);
         View rootView = inflater.inflate(R.layout.dialog_progress_bar, container, false);
         mRecylerView = rootView.findViewById(R.id.recylerview);
+        total = rootView.findViewById(R.id.total);
 //        mFlowLayout = rootView.findViewById(R.id.flowlayout);
 //        btn_submit = rootView.findViewById(R.id.btn_submit);
 //        btn_submit.setClickable(true);
@@ -63,5 +68,14 @@ public class ProgressDialogFragment extends DialogFragment {
 
     public void setDatas(CardAnswerBean cardAnswer) {
         mAdapter.setNewData(cardAnswer.getAnswers());
+    }
+
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        new SpanUtils().append("我的答案：").appendImage(R.mipmap.ic_zs_answer_right)
+                ;
     }
 }
