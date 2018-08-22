@@ -2,7 +2,6 @@ package cos.jingzheng.gittestwidget;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -11,26 +10,28 @@ import android.widget.Button;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import cos.jingzheng.gittestwidget.activity.RecylerActivity;
+import cos.jingzheng.gittestwidget.activity.ViewpagerActivity;
 import cos.jingzheng.gittestwidget.progressBar.ProgressBarActivity;
 
 
 public class MainActivity extends AppCompatActivity {
 
     private Button btnMap;
-    private AlertDialog mAlertDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-        btnMap = (Button) findViewById(R.id.btn_map);
-        FragmentManager supportFragmentManager = getSupportFragmentManager();
+        btnMap = findViewById(R.id.btn_map);
     }
 
 
 
-    @OnClick({R.id.btn_map, R.id.btn_dialog,R.id.btn_softKeyboard})
+    @OnClick({R.id.btn_map, R.id.btn_dialog,R.id.btn_softKeyboard,
+            R.id.recylerview,
+            R.id.btn_viewpager})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btn_map:
@@ -41,6 +42,14 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.btn_softKeyboard:
                 startActivity(new Intent(this,SoftKeyboardActivity.class));
+                break;
+            case R.id.btn_viewpager:
+                startActivity(new Intent(this, ViewpagerActivity.class));
+                break;
+            case R.id.recylerview:
+                startActivity(new Intent(this,RecylerActivity.class));
+                break;
+            default:
                 break;
         }
     }

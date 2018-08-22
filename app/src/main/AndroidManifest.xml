@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="cos.jingzheng.gittestwidget">
+    package="cos.jingzheng.gittestwidget">
 
     <application
         android:name=".MyApp"
@@ -14,35 +14,35 @@
             android:name=".MainActivity"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".progressBar.ProgressBarActivity">
-        </activity>
+        <activity android:name=".progressBar.ProgressBarActivity" />
 
         <service
             android:name=".keyboard.SoftKeyboard"
             android:permission="android.permission.BIND_INPUT_METHOD">
             <intent-filter>
-                <action android:name="android.view.InputMethod"/>
+                <action android:name="android.view.InputMethod" />
             </intent-filter>
 
             <meta-data
                 android:name="android.view.im"
-                android:resource="@xml/method"/>
+                android:resource="@xml/method" />
         </service>
 
         <activity
             android:name=".SoftKeyboardActivity"
             android:label="@string/settings_name">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-        <activity android:name=".CityActivity">
-        </activity>
+        <activity android:name=".CityActivity" />
+        <activity android:name=".activity.ViewpagerActivity" />
+        <activity android:name=".activity.RecylerActivity"></activity>
     </application>
 
 </manifest>
