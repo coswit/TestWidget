@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-        btnMap = findViewById(R.id.btn_map);
+        btnMap = (Button) findViewById(R.id.btn_map);
     }
 
 
