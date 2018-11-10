@@ -42,7 +42,8 @@
         </activity>
         <activity android:name=".CityActivity" />
         <activity android:name=".activity.ViewpagerActivity" />
-        <activity android:name=".activity.RecylerActivity"></activity>
+        <activity android:name=".activity.RecylerActivity" />
+        <activity android:name=".activity.BarsActivity"></activity>
     </application>
 
 </manifest>

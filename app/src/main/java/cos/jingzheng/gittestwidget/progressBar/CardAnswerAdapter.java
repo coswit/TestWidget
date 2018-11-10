@@ -26,6 +26,7 @@ public class CardAnswerAdapter extends BaseQuickAdapter<CardAnswerBean.Answer, B
     protected void convert(BaseViewHolder helper, CardAnswerBean.Answer item) {
         helper.setText(R.id.tv_letter, item.letter + "");
         ProgressBar progress = helper.getView(R.id.progressbar);
+        progress.setMax(100);
         DecimalFormat df = new DecimalFormat("0");
         if (item.all > 0) {
             double d = (double) item.answered / item.all;
