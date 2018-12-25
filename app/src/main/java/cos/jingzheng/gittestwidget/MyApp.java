@@ -1,6 +1,6 @@
 package cos.jingzheng.gittestwidget;
 
-import android.app.Application;
+import android.support.multidex.MultiDexApplication;
 
 import com.blankj.utilcode.util.Utils;
 
@@ -8,7 +8,7 @@ import com.blankj.utilcode.util.Utils;
  * Created by jingzheng on 2018/6/19.
  */
 
-public class MyApp extends Application{
+public class MyApp extends MultiDexApplication {
     @Override
     public void onCreate() {
         super.onCreate();

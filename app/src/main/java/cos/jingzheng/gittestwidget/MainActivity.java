@@ -13,6 +13,7 @@ import butterknife.OnClick;
 import cos.jingzheng.gittestwidget.activity.BarsActivity;
 import cos.jingzheng.gittestwidget.activity.RecylerActivity;
 import cos.jingzheng.gittestwidget.activity.ViewpagerActivity;
+import cos.jingzheng.gittestwidget.flow.FlowActivity;
 import cos.jingzheng.gittestwidget.progressBar.ProgressBarActivity;
 
 
@@ -60,6 +61,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+
+    @OnClick(R.id.flow)
+    void toFlow(){
+        startActivity(new Intent(this, FlowActivity.class));
+
+    }
     private void initDialog() {
 
 

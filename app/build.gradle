@@ -9,6 +9,7 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
 //        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -18,22 +19,28 @@ android {
         }
     }
 }
+configurations{
+    all*.exclude group:'com.google.guava',module: 'failureaccess'
+}
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-//    compile 'com.android.support:appcompat-v7:26.0.1'
-//    compile 'com.android.support:support-v4:26.0.1'
-    compile 'com.lqr.recyclerview:library:1.0.2'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
 
-    compileOnly 'org.projectlombok:lombok:1.16.20'
+    implementation 'com.android.support:multidex:1.0.1'
+    implementation 'com.lqr.recyclerview:library:1.0.2'
+
+    implementation 'org.projectlombok:lombok:1.16.20'
     annotationProcessor 'org.projectlombok:lombok:1.16.20'
 
-    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha7'
-    compile 'com.jakewharton:butterknife:8.8.1'
-    testCompile 'junit:junit:4.12'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.0-alpha7'
+    implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
-    compile 'com.solidfire.code.gson:gson:2.6.2'
-    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.20'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.solidfire.code.gson:gson:2.6.2'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.20'
     implementation 'com.blankj:utilcode:1.17.0'
-    implementation 'com.marshalchen.ultimaterecyclerview:library:0.7.3'
+//    implementation 'com.marshalchen.ultimaterecyclerview:library:0.7.3'
+    implementation 'com.google.guava:guava:27.0-android'
+    implementation  'com.google.code.gson:gson:2.7'
+
 }
