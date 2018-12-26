@@ -14,6 +14,7 @@ import cos.jingzheng.gittestwidget.activity.BarsActivity;
 import cos.jingzheng.gittestwidget.activity.RecylerActivity;
 import cos.jingzheng.gittestwidget.activity.ViewpagerActivity;
 import cos.jingzheng.gittestwidget.flow.FlowActivity;
+import cos.jingzheng.gittestwidget.js.JsActivity;
 import cos.jingzheng.gittestwidget.progressBar.ProgressBarActivity;
 
 
@@ -34,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     @OnClick({R.id.btn_map, R.id.btn_dialog,R.id.btn_softKeyboard,
             R.id.recylerview,
             R.id.bars,
+            R.id.js,
             R.id.btn_viewpager})
     public void onViewClicked(View view) {
         switch (view.getId()) {
@@ -54,6 +56,10 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.bars:
                 startActivity(new Intent(this, BarsActivity.class));
+                break;
+
+            case R.id.js:
+                startActivity(new Intent(this, JsActivity.class));
                 break;
             default:
                 break;

@@ -19,8 +19,8 @@ android {
         }
     }
 }
-configurations{
-    all*.exclude group:'com.google.guava',module: 'failureaccess'
+configurations {
+    all*.exclude group: 'com.google.guava', module: 'failureaccess'
 }
 
 dependencies {
@@ -41,6 +41,7 @@ dependencies {
     implementation 'com.blankj:utilcode:1.17.0'
 //    implementation 'com.marshalchen.ultimaterecyclerview:library:0.7.3'
     implementation 'com.google.guava:guava:27.0-android'
-    implementation  'com.google.code.gson:gson:2.7'
+    implementation 'com.google.code.gson:gson:2.7'
+    compile 'com.github.lzyzsd:jsbridge:1.0.4'
 
 }

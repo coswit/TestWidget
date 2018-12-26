@@ -44,7 +44,8 @@
         <activity android:name=".activity.ViewpagerActivity" />
         <activity android:name=".activity.RecylerActivity" />
         <activity android:name=".activity.BarsActivity" />
-        <activity android:name=".flow.FlowActivity"></activity>
+        <activity android:name=".flow.FlowActivity" />
+        <activity android:name=".js.JsActivity"></activity>
     </application>
 
 </manifest>
