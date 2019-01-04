@@ -2,6 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cos.jingzheng.gittestwidget">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <application
         android:name=".MyApp"
         android:allowBackup="true"
@@ -45,7 +54,9 @@
         <activity android:name=".activity.RecylerActivity" />
         <activity android:name=".activity.BarsActivity" />
         <activity android:name=".flow.FlowActivity" />
-        <activity android:name=".js.JsActivity"></activity>
+        <activity android:name=".js.JsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            />
     </application>
 
 </manifest>
