@@ -1,33 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="wrap_content"
     android:fillViewport="true"
-    tools:context="cos.jingzheng.gittestwidget.js.JsActivity">
-
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    <Button
-        android:text="click"
-        android:id="@+id/btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <!--<com.github.lzyzsd.jsbridge.BridgeWebView-->
-        <!--android:id="@+id/web"-->
-        <!--app:layout_constraintTop_toBottomOf="@id/btn"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"/>-->
+    android:orientation="horizontal">
 
     <com.tencent.smtt.sdk.WebView
-        android:id="@+id/web"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    </LinearLayout>
-</ScrollView>
+        android:id="@+id/webView2"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content" />
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:fillViewport="true"-->
+        <!--android:orientation="vertical">-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:visibility="invisible"
+                android:id="@+id/btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="click" />
+
+            <!--<com.github.lzyzsd.jsbridge.BridgeWebView-->
+            <!--android:id="@+id/web"-->
+            <!--app:layout_constraintTop_toBottomOf="@id/btn"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"/>-->
+
+            <com.tencent.smtt.sdk.WebView
+                android:id="@+id/web"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    <!--</ScrollView>-->
+
+
+</LinearLayout>

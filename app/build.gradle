@@ -29,6 +29,7 @@ dependencies {
     implementation 'com.android.support:multidex:1.0.1'
     implementation 'com.lqr.recyclerview:library:1.0.2'
     implementation 'org.projectlombok:lombok:1.16.20'
+    implementation 'com.android.support:support-v4:26.1.0'
     annotationProcessor 'org.projectlombok:lombok:1.16.20'
     implementation 'com.android.support.constraint:constraint-layout:1.0.0-alpha7'
     implementation 'com.jakewharton:butterknife:8.8.1'

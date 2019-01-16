@@ -1,10 +1,11 @@
 package cos.jingzheng.gittestwidget.js;
 
 import android.os.Bundle;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.View;
 import android.webkit.JavascriptInterface;
+import android.widget.FrameLayout;
 
 import com.tencent.smtt.sdk.WebSettings;
 import com.tencent.smtt.sdk.WebView;
@@ -17,17 +18,24 @@ import cos.jingzheng.gittestwidget.R;
 
 public class JsActivity extends AppCompatActivity {
 
-    private static final String TAG = "js";
+    private static final String TAG = "jsTag";
     @BindView(R.id.web)
     WebView mWebView;
 //    BridgeWebView mWebView;
+
+    @BindView(R.id.webView2)
+    WebView webView2;
+
+
+    private String url = "http://lijt.yunduoketang.cn/interfaces/getVideoDetail?id=267267&type=class";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_js);
         ButterKnife.bind(this);
-        loadX5();
+        preloadWeb();
+        resizeWebByJs();
     }
 
 
@@ -58,11 +66,39 @@ public class JsActivity extends AppCompatActivity {
 //
 //            }
 //        });
-        loadX5();
+
+
+//        resizeWebByJs();
+//        loadWebFragment();
+
+//        preloadWeb();
+
     }
 
-    private void loadX5() {
-        mWebView.setVisibility(View.INVISIBLE);
+    private void resizeWebByJs() {
+        initWebSetting(mWebView);
+
+
+        mWebView.setWebViewClient(new WebViewClient() {
+            @Override
+            public void onPageFinished(WebView webView, String s) {
+                super.onPageFinished(webView, s);
+//                mWebView.loadUrl("javascript:MyApp.resize(document.body.getBoundingClientRect().height)");
+                webView.loadUrl("javascript:MyApp.resize(document.body.scrollHeight)");
+                webView.loadUrl("javascript:MyApp.resize(document.documentElement.getBoundingClientRect().height)");
+                int height = webView.getMeasuredHeight();
+
+                Log.d(TAG, "onPageFinished: " + height);
+
+
+            }
+        });
+//        mWebView.reload();
+        mWebView.addJavascriptInterface(this, "MyApp");
+        mWebView.loadUrl(url);
+    }
+
+    private void initWebSetting(WebView mWebView) {
         WebSettings webSetting = mWebView.getSettings();
         webSetting.setJavaScriptEnabled(true);
         webSetting.setJavaScriptCanOpenWindowsAutomatically(true);
@@ -82,36 +118,6 @@ public class JsActivity extends AppCompatActivity {
         webSetting.setPluginState(WebSettings.PluginState.ON_DEMAND);
         // webSetting.setRenderPriority(WebSettings.RenderPriority.HIGH);
         webSetting.setCacheMode(WebSettings.LOAD_NO_CACHE);
-
-
-//        WebView temp = new WebView(this);
-//
-//        temp.setWebViewClient(new WebViewClient(){
-//            @Override
-//            public void onPageFinished(WebView webView, String s) {
-//                super.onPageFinished(webView, s);
-//                mWebView.loadUrl("http://lijt.yunduoketang.cn/interfaces/getVideoDetail?id=267267&type=class");
-//            }
-//        });
-
-        mWebView.setWebViewClient(new WebViewClient() {
-            @Override
-            public void onPageFinished(WebView webView, String s) {
-//                webView.loadUrl("javascript:MyApp.resize(document.body.getBoundingClientRect().height)");
-                super.onPageFinished(webView, s);
-                webView.loadUrl("javascript:MyApp.resize(document.body.scrollHeight)");
-                webView.loadUrl("javascript:MyApp.resize(document.documentElement.getBoundingClientRect().height)");
-                int height = webView.getMeasuredHeight();
-
-                mWebView.setVisibility(View.VISIBLE);
-                Log.d(TAG, "onPageFinished: " + height);
-
-
-            }
-        });
-//        mWebView.reload();
-        mWebView.addJavascriptInterface(this, "MyApp");
-        mWebView.loadUrl("http://lijt.yunduoketang.cn/interfaces/getVideoDetail?id=267267&type=class");
     }
 
 
@@ -125,10 +131,51 @@ public class JsActivity extends AppCompatActivity {
 //                mWebView.setLayoutParams(
 //                        new LinearLayout.LayoutParams(getResources().getDisplayMetrics().widthPixels,
 //                                height1));
-//                mWebView.setVisibility(View.VISIBLE);
-//                mWebView.requestLayout();
             }
         });
     }
+
+    private void loadWebFragment() {
+        String url = "http://lijt.yunduoketang.cn/interfaces/getVideoDetail?id=267267&type=class";
+        FrameLayout frameLayout = new FrameLayout(this);
+        FrameLayout.LayoutParams params = new FrameLayout.
+                LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.WRAP_CONTENT);
+        frameLayout.setLayoutParams(params);
+
+        final WebFragment webFragment = WebFragment.newInstance(url);
+        FragmentTransaction transaction = JsActivity.this.getSupportFragmentManager().beginTransaction();
+
+        transaction.commit();
+
+        webFragment.setOnInteractionListener(new WebFragment.OnFragmentInteractionListener() {
+            @Override
+            public void onFragmentInteraction() {
+            }
+        });
+    }
+
+
+    private void preloadWeb() {
+        webView2.loadUrl(url);
+        initWebSetting(webView2);
+        webView2.setWebViewClient(new WebViewClient() {
+            @Override
+            public void onPageFinished(WebView webView, String s) {
+                super.onPageFinished(webView, s);
+                int contentHeight = webView.getContentHeight();
+                //12825
+                Log.d(TAG, "2——onPageFinished: " + contentHeight);
+
+//                if (contentHeight > 0) {
+//                    mWebView.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, contentHeight));
+//                    mWebView.loadUrl(url);
+//                }
+//                FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, contentHeight);
+//                mWebView.setLayoutParams(layoutParams);
+//                mWebView.loadUrl(url);
+            }
+        });
+    }
+
 
 }
