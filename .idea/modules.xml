@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GitTestWidget.iml" filepath="$PROJECT_DIR$/GitTestWidget.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basemodule/basemodule.iml" filepath="$PROJECT_DIR$/basemodule/basemodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/daggermodule/daggermodule.iml" filepath="$PROJECT_DIR$/daggermodule/daggermodule.iml" />
     </modules>
   </component>
 </project>
