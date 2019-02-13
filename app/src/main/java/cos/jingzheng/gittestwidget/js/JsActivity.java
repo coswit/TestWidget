@@ -34,7 +34,7 @@ public class JsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_js);
         ButterKnife.bind(this);
-        preloadWeb();
+//        preloadWeb();
         resizeWebByJs();
     }
 
