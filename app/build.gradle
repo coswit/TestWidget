@@ -29,16 +29,15 @@ dependencies {
     implementation 'com.lqr.recyclerview:library:1.0.2'
     //    implementation 'com.android.support:support-v4:26.1.0'
     annotationProcessor 'org.projectlombok:lombok:1.16.20'
-    implementation 'com.android.support.constraint:constraint-layout:1.0.0-alpha7'
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
     testImplementation 'junit:junit:4.12'
     implementation 'com.solidfire.code.gson:gson:2.6.2'
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.20'
-    implementation 'com.blankj:utilcode:1.17.0'
     //    implementation 'com.marshalchen.ultimaterecyclerview:library:0.7.3'
     implementation 'com.google.guava:guava:27.0-android'
     implementation 'com.github.lzyzsd:jsbridge:1.0.4'
     implementation files('libs/tbs_sdk_thirdapp_v3.2.0.1104_43200_sharewithdownload_withfilereader_withoutGame_obfs_20170609_115346.jar')
     implementation project(':basemodule')
+    implementation 'org.projectlombok:lombok:1.16.20'
 }

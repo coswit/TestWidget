@@ -1,8 +1,9 @@
-package cos.jingzheng.gittestwidget;
+package com.coswit;
 
 import android.support.multidex.MultiDexApplication;
 
 import com.blankj.utilcode.util.Utils;
+
 
 /**
  * Created by jingzheng on 2018/6/19.
