@@ -16,6 +16,7 @@ import cos.jingzheng.gittestwidget.activity.ViewpagerActivity;
 import cos.jingzheng.gittestwidget.flow.FlowActivity;
 import cos.jingzheng.gittestwidget.js.JsActivity;
 import cos.jingzheng.gittestwidget.progressBar.ProgressBarActivity;
+import cos.jingzheng.gittestwidget.thread.ThreadActivity;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
             R.id.recylerview,
             R.id.bars,
             R.id.js,
+            R.id.thread,
             R.id.btn_viewpager})
     public void onViewClicked(View view) {
         switch (view.getId()) {
@@ -60,6 +62,9 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.js:
                 startActivity(new Intent(this, JsActivity.class));
+                break;
+            case R.id.thread:
+                startActivity(new Intent(this, ThreadActivity.class));
                 break;
             default:
                 break;

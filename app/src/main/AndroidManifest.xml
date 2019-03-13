@@ -3,14 +3,11 @@
     package="cos.jingzheng.gittestwidget">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-
     <uses-permission android:name="android.permission.INTERNET" />
-
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
     <application
         android:name="com.coswit.App"
         android:allowBackup="true"
@@ -19,6 +16,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".thread.ThreadActivity"></activity>
         <activity
             android:name=".MainActivity"
             android:windowSoftInputMode="adjustResize">
@@ -54,9 +52,9 @@
         <activity android:name=".activity.RecylerActivity" />
         <activity android:name=".activity.BarsActivity" />
         <activity android:name=".flow.FlowActivity" />
-        <activity android:name=".js.JsActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
-            />
+        <activity
+            android:name=".js.JsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
     </application>
 
 </manifest>
