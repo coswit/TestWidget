@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ver="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/main"
-    xmlns:ver="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     tools:context="cos.jingzheng.gittestwidget.progressBar.ProgressBarActivity">
 
-   <Button
-       android:id="@+id/btn_show"
-       android:text="显示dialog"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示dialog" />
 
-
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

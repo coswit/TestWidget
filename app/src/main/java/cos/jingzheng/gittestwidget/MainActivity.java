@@ -74,12 +74,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
     private void initDialog() {
-
-
         View view = getLayoutInflater().inflate(R.layout.dialog, null);
         AlertDialog alertDialog = new  AlertDialog.Builder(this).setView(view).create();
         alertDialog.setCanceledOnTouchOutside(false);
         alertDialog.show();
         alertDialog.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);
     }
+
 }

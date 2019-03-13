@@ -83,9 +83,9 @@ public class JsActivity extends AppCompatActivity {
             @Override
             public void onPageFinished(WebView webView, String s) {
                 super.onPageFinished(webView, s);
-//                mWebView.loadUrl("javascript:MyApp.resize(document.body.getBoundingClientRect().height)");
-                webView.loadUrl("javascript:MyApp.resize(document.body.scrollHeight)");
-                webView.loadUrl("javascript:MyApp.resize(document.documentElement.getBoundingClientRect().height)");
+//                mWebView.loadUrl("javascript:App.resize(document.body.getBoundingClientRect().height)");
+                webView.loadUrl("javascript:App.resize(document.body.scrollHeight)");
+                webView.loadUrl("javascript:App.resize(document.documentElement.getBoundingClientRect().height)");
                 int height = webView.getMeasuredHeight();
 
                 Log.d(TAG, "onPageFinished: " + height);
@@ -94,7 +94,7 @@ public class JsActivity extends AppCompatActivity {
             }
         });
 //        mWebView.reload();
-        mWebView.addJavascriptInterface(this, "MyApp");
+        mWebView.addJavascriptInterface(this, "App");
         mWebView.loadUrl(url);
     }
 
