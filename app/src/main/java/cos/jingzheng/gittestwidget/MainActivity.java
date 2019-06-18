@@ -14,6 +14,7 @@ import cos.jingzheng.gittestwidget.activity.BarsActivity;
 import cos.jingzheng.gittestwidget.activity.RecylerActivity;
 import cos.jingzheng.gittestwidget.activity.ViewpagerActivity;
 import cos.jingzheng.gittestwidget.flow.FlowActivity;
+import cos.jingzheng.gittestwidget.inject.InjectActivity;
 import cos.jingzheng.gittestwidget.js.JsActivity;
 import cos.jingzheng.gittestwidget.progressBar.ProgressBarActivity;
 import cos.jingzheng.gittestwidget.thread.ThreadActivity;
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
             R.id.bars,
             R.id.js,
             R.id.thread,
+            R.id.inject,
             R.id.btn_viewpager})
     public void onViewClicked(View view) {
         switch (view.getId()) {
@@ -65,6 +67,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.thread:
                 startActivity(new Intent(this, ThreadActivity.class));
+                break;
+            case R.id.inject:
+                startActivity(new Intent(this, InjectActivity.class));
                 break;
             default:
                 break;

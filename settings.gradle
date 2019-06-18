@@ -1,2 +1,2 @@
-include ':app', ':basemodule', ':daggermodule'
+include ':app', ':basemodule', ':daggermodule', ':processor', ':bind_api'
 

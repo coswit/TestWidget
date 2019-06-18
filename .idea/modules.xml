@@ -5,7 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/GitTestWidget.iml" filepath="$PROJECT_DIR$/GitTestWidget.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/basemodule/basemodule.iml" filepath="$PROJECT_DIR$/basemodule/basemodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bind_api/bind_api.iml" filepath="$PROJECT_DIR$/bind_api/bind_api.iml" />
       <module fileurl="file://$PROJECT_DIR$/daggermodule/daggermodule.iml" filepath="$PROJECT_DIR$/daggermodule/daggermodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/processor/processor.iml" filepath="$PROJECT_DIR$/processor/processor.iml" />
     </modules>
   </component>
 </project>
