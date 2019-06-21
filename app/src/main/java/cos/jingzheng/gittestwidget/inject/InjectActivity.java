@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
+import butterknife.OnClick;
 import cos.bind.InjectView;
 import cos.jingzheng.gittestwidget.R;
 
@@ -27,9 +28,9 @@ public class InjectActivity extends AppCompatActivity {
 
     }
 
-//    @OnClick(R.id.bt_1)
-//    void click() {
-//
-//    }
+    @OnClick(R.id.bt_1)
+    void click() {
+
+    }
 
 }
